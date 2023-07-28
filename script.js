@@ -72,6 +72,10 @@ const extractData = (event) => {
   }
   addTasks(info);
   //Cleaning Up
+   for(let i = 0 ; i < elements.length; i++)
+  {
+    elements[i].name === "status" ? elements[i].value="TODO" : elements[i].value = "";
+  }
   event.target.removeEventListener("submit", event.target);
   modalContainer.remove();
 };
