@@ -215,6 +215,11 @@ form > * {
   border-radius: 8px;
 }
 
+
+.card-para{
+  word-wrap:break-word;
+}
+
 /* Desktop screen size */
 @media screen and (min-width: 1001px) and (max-width: 1347px) {
   .toggle-container {
