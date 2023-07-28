@@ -106,7 +106,7 @@ function addTasks(task_info) {
   newTask.draggable = true;
   newTask.innerHTML = ` <h3>${task_info["title"]}</h3>
   <b>${task_info["assigne"]}</b>
-  <p>${task_info["description"]}</p>`;
+ <p class="card-para">${task_info["description"]}</p>`;
 
   
   const appendTask = document.getElementById(task_info["status"]);
