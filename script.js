@@ -38,6 +38,26 @@ drop.addEventListener("click", (e) => {
     : (dropdownLists.style.display = "none");
 });
 
+// Function to toggle the dark theame
+const toggleButton = document.getElementById("dark-mode-toggle");
+const createButton = document.getElementsByClassName("fa-circle-plus")[0];
+let toggled = false;
+toggleButton.addEventListener("click", () => {
+    if (!toggled) {
+        toggleButton.classList.toggle("active");
+        document.body.style.backgroundColor = "black";
+        createButton.style.color= "#d4d4d4";
+        toggled = true;
+      }
+      else{
+        toggleButton.classList.toggle("active");
+        document.body.style.backgroundColor = "white";
+        createButton.style.color= "#3d4040";
+        toggled = false; 
+    }
+});
+
+
 //Function to close the task-form (tab/modal)
 const closeModal = () => {
   modalContainer.remove();
